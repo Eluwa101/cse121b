@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 let fullName = 'Eluwa Monday';
 let currentYear = new Date().getFullYear();
-let profilePicture = 'images/eluwa.jpg';
+let profilePicture = 'images/eluwa.JPG';
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById(`name`);
@@ -15,7 +15,7 @@ const imageElement = document.querySelector(`#profileImage`);
 
 /* Step 4 - Adding Content */
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
-yearElement.textcontent = currentYear;
+yearElement.textContent = currentYear;
 imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt',`profile image of ${fullName}`);
 
