@@ -53,10 +53,10 @@ const filterTemples = (temples) =>
             displayTemples(temples.filter(temple => temple.location.includes('Utah')));
             break;
         case 'nonutah':
-            displayTemples(temples.filter(temple => !temple.location.includes('Utah')));
+            displayTemples(temples.filter(temple => !temple.location.tirm().toLowerCase().includes('utah')));
             break;
         case 'older':
-            const olderTemples = temples.filter(temple => new Date(temple.dedicationDate) < new Date(1950, 0, 1));
+            const olderTemples = temples.filter(temple => new Date(temple.dedicated) < new Date(1950, 0, 1));
             displayTemples(olderTemples);
             break;
         case 'all':
