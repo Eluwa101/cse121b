@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Tesst</title>
+</head>
+<body>
+    <div>
+        <p>this is the testing of the test html</p>
+    </div>
+    <script>const url = 'https://life-left.p.rapidapi.com/time-left?birth=14%20April%201977&gender=male';
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '821e7b2a1bmsha47fde3beac7f76p14b86djsn128d9ab1b5b1',
+                'X-RapidAPI-Host': 'life-left.p.rapidapi.com'
+            }
+        };
+        
+        try {
+            const response = await fetch(url, options);
+            const result = await response.text();
+            console.log(result);
+        } catch (error) {
+            console.error(error);
+        }</script>
+</body>
+</html>
